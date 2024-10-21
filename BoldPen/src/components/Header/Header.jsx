@@ -45,13 +45,13 @@ function Header() {
             </Link>
           </div>
           <ul className='flex ml-auto'>
-            {navItems.map((item)=>{
+            {navItems.map((item)=>
               item.active ? (
                 <li className='mr-3' key={item.name}>
                   <button onClick={() => navigate(item.slug)}>{item.name}</button>
                 </li>
               ) : null
-            })}
+            )}
             {authStatus && (
               <li className='mr-3'>
                 <LogoutBtn />

@@ -10,7 +10,7 @@ function LogoutBtn() {
                 dispatch(logout())
             })
         }
-    }
+  
 
   return (
     <button
@@ -18,6 +18,6 @@ function LogoutBtn() {
     onClick={logoutHandler}
     >Logout</button>
   )
-
+}
 
 export default LogoutBtn
