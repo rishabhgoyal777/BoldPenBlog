@@ -52,7 +52,7 @@ export class Service{
         }
     }
 
-    async detePost(slug){
+    async deletePost(slug){
         try{
             await this.databases.deleteDocument(
                 conf.appWriteDatabaseId,
@@ -61,7 +61,7 @@ export class Service{
             )
             return true;
         }catch(error){
-            console.log("Appwrite service :: detePost :: error", error);
+            console.log("Appwrite service :: deletePost :: error", error);
             return false;
         }
     }
